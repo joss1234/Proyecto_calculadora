@@ -3,22 +3,33 @@
     ViewBag.Title = "Index";
 }
 
-<h2>Index</h2>
+
 
 <html>
+<head>
+    <link href="~/Content/estilos_calculadora.css" rel="stylesheet"/>
+</head>
 
 <body>
-    <div class="cal">
+    <div class="divCalculadora">
         @using (Html.BeginForm("/Index", "Calc", FormMethod.Post))
         {
-            <input type="number" name="n1" id="n1" value="@Model.n1" /> <br />
-            <input type="number" name="n2" id="n2" value="@Model.n2" /><br />
-         
-            <button type="submit" id="1" value="1" name="calcular">+</button>
-            <button type="submit" id="2" value="2" name="calcular">-</button>
-            <button type="submit" id="3" value="3" name="calcular">*</button>
-            <button type="submit" id="4" value="4" name="calcular">/</button>
-            <input type="number" name="total" id="total" value="@Model.total" />
+
+            <div class="calc">
+             <h2>Calculadora</h2><br/>
+
+            <label for="numeros">Nùmeros:</label>
+            <input type="number" name="n1" id="n1" value="@Model.n1" class="texto" />
+            <input type="number" name="n2" id="n2" value="@Model.n2" class="texto"  /><br />
+            <button type="submit" id="1" value="1" name="calcular" class="boton">+</button>
+            <button type="submit" id="2" value="2" name="calcular" class="boton">-</button>
+            <button type="submit" id="3" value="3" name="calcular" class="boton">*</button>
+            <button type="submit" id="4" value="4" name="calcular" class="boton">/</button><br /><br />
+            <label for="total">Total:</label>
+            <input type="number" name="total" id="total" value="@Model.total" class="texto" readonly />
+
+            </div>
+      
         }
     </div>
 

@@ -1,0 +1,47 @@
+﻿body {
+
+}
+.boton {
+    text-decoration: none;
+    padding: 10px;
+    font-weight: 600;
+    font-size: 30px;
+    color: #ffffff;
+    background-color: #150734;
+    border-radius: 6px;
+    border: 2px solid black;
+}
+
+    .boton:hover {
+        color: #2D7FAE;
+        background-color: #ffffff;
+    }
+.divCalculadora {
+  
+    text-align: center;
+    font-size: 15px;
+}
+.texto {
+    font-weight: 300;
+    color: #ffffff;
+    background: #B9B8BD;
+    margin: 0 0 25px;
+    overflow: hidden;
+    padding: 20px;
+    font-size: 15px;
+    padding: 20px;
+    font-family: sans-serif;
+}
+.calc {
+    border: 4px solid #2D7FAE;
+    width: 80%;
+    background: linear-gradient( 50deg,white, black);
+
+}
+h2{
+
+    color:aliceblue;
+
+}
+
+
