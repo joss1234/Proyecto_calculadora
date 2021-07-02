@@ -14,7 +14,7 @@ namespace WebApplication1.Controllers
         {
             return View(new Class1());
         }
-        [ HttpPost]
+        [HttpPost]
         public ActionResult Index(Class1 c, string calcular)
         {
             if (calcular == "1")
@@ -41,5 +41,5 @@ namespace WebApplication1.Controllers
 
 
         }
-
+    }
   }
